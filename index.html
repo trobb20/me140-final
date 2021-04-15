@@ -11,36 +11,136 @@
   <title>ME140 Teddy and Taylor</title>
 </head>
 <body><br>
-<!-- Title/Description -->
 <div class='container'>
-  <div class='box blueBox' onclick='openMoreInfo()'>
-    <h1>Title and Stuff</h1>
-    <button type="button" class="btn btn-primary" onclick='window.open("moreinfo.html")'> More Info </button>
-  </div>
-</div><br>
-<!-- Generic Cam -->
-<div class="container">
-  <div class='box purpleBox'>
-    <h1>Link to generic cam</h1>
-  </div>
-</div><br>
-<!-- Yellow Hints -->
-<div class="container">
+<!-- Title/Description -->
   <div class='row'>
-    <div class='col'>
-      <div class='box yellowBox'>
-        <h1>Hint 1</h1>
+    <div class='col-md'>
+      <div class='box blueBox' onclick='openMoreInfo()'>
+        <h1> Mechanical Modeling Project Placemat </h1>
+        <p class='subtitle'> Taylor K. & Teddy R. 2021</p>
+        <p> 
+          Can you build a mechanical system that exhibits rotational, translational 
+          and general plane motion? Can you build one that uses a cam?
+        </p>
+        <div class='container'><div class='row'>
+          <div class='col'>
+            <div class='box blueBox'>
+              <h2 class='clickableLink' onclick='window.open("moreInfoProject.html")'>More info on the project</h2>
+            </div>
+          </div>
+          <div class='col'>
+            <div class='box blueBox'>
+              <h2 class='clickableLink' onclick="window.open('moreInfoCam.html')">More info on cams</h2>
+            </div>
+          </div>
+        </div></div>
       </div>
     </div>
-    <div class='col'>
+  </div><br>
+<!-- Generic Cam -->
+  <div class='row'>
+    <div class='col-md'>
+      <div class='box purpleBox'>
+        <div class='container'><div class='row align-items-center'>
+          <div class='col-2'></div>
+          <div class='col-4'>
+            <h2 class='clickableLink'> Click to download a generic cam template in Solidworks: </h2>
+          </div>
+          <div class='col-4'>
+            <img class='img-fluid float-right' src='http://www.nsxprime.com/photopost/data/500/cam.jpg' alt='generic cam'>
+          </div>
+          <div class='col-2'></div>
+        </div></div>
+      </div>
+    </div>
+  </div><br>
+<!-- Yellow Hints -->
+  <div class='row align-items-center'>
+    <div class='col-md'>
       <div class='box yellowBox'>
-        <h1>Hint 2</h1>
+        <div class='container'><div class='row align-items-center'>
+          <div class='col-md-2'><h3 class='font-weight-light'> Hint: </h3></div>
+          <div class='col-md-10'>
+            <p class='text-left'>
+              <ul  style='margin-bottom:0px;'><li class='text-left'>How would you secure the cam with LEGO?</li>
+              <li class='text-left'>Can you find some LEGO pieces that would be able to "ride" on the cam?</li>
+              <li class='text-left'>How would you keep those LEGO pieces in contact with the cam?</li>
+              </ul>
+            </p>
+          </div>
+        </div></div>
+      </div>
+    </div>
+    <div class='col-md' style='height: 100%;'>
+      <div class='box yellowBox'>
+        <div class='container'><div class='row align-items-center'>
+          <div class='col-2'><h3 class='font-weight-light'> Hint: </h3></div>
+          <div class='col-10'>
+            <p class='text-left'>
+              <ul  style='margin-bottom:0px;'><li class='text-left'>How does a cam-rider move relative to a cam?</li>
+              <li class='text-left'>What does this mean mathematically?</li>
+              <li class='text-left'>more questions...</li>
+              </ul>
+            </p>
+          </div>
+        </div></div>
+      </div>
+    </div>
+  </div><br>
+<!-- Pink Examples -->
+  <div class='row align-items-center'>
+    <div class='col-md'>
+      <div class='box pinkBox' id='HINT1' style='padding-top: 150px; padding-bottom:150px;'>
+        <h2> 
+          Need a hint on how to make a better cam? 
+        </h2>
+        <a style='color: black;' data-toggle="collapse" href="#hint1" role="button" aria-expanded="false" aria-controls="hint1" onclick='decreasePadding("HINT1")'>
+          <p class='clickableLink' style='margin-bottom:.5rem;'> Try out these Solidworks Examples </p>
+        </a>
+        <div class="collapse" id="hint1">
+          <a href='https://google.com'>
+          <img src="https://cdn4.iconfinder.com/data/icons/moving-mechanisms/500/d410_4_cam_mechanism_cartoon_circular_device_mechanical_motion-512.png" class="img-fluid" alt="cam image">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class='col-md'>
+      <div class='box pinkBox' id='HINT2' style='padding-top: 150px; padding-bottom:150px;'>
+        <h2> 
+          Need a hint on how to understand cam math?
+        </h2>
+        <a style='color: black;' data-toggle="collapse" href="#hint2" role="button" aria-expanded="false" aria-controls="hint2" onclick='decreasePadding("HINT2")'>
+          <p class='clickableLink' style='margin-bottom:.5rem;'> Try out this textbook problem </p>
+        </a>
+        <div class="collapse" id="hint2">
+          <a href='https://google.com'>
+          <img src="https://img.freepik.com/free-vector/realistic-math-chalkboard-background_23-2148163817.jpg?size=626&ext=jpg" class="img-fluid" alt="cam image">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div><br>
+<!-- Orange Advanced Examples -->
+  <div class='row'>
+    <div class='col-md'>
+      <div class='box orangeBox'>
+        <h1>Orange Box</h1>
+      </div>
+    </div>
+      <div class='col-md'>
+        <div class='box orangeBox'>
+          <h1>Orange Box</h1>
       </div>
     </div>
   </div>
-</div>
-
-
+</div><br><br>
+<!-- JS -->
+<script>
+  function decreasePadding(id){
+    document.getElementById(id).style.paddingTop = "10px";
+    document.getElementById(id).style.paddingBottom = "10px";
+  }
+</script>
 <!-- Bootstrap stuff -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

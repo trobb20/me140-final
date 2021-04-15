@@ -1,10 +1,37 @@
+/*Teddy Robbins & Taylor Korte ME140 2021
+style.css for final project
+
+Native Element Styling*/
 body {
 	font-family: 'Helvetica Neue', Helvetica, Arial;
 	text-align: center;
+	line-height: 1.15;
 }
 a:link {text-decoration: none;}
 a:visited {
 	color: black;
+}
+h1	{
+	margin-bottom: 0.2rem;
+}
+h2	{
+	font-size: 1.2rem;
+	margin-bottom: 0px;
+}
+.clickableLink:hover {
+	color: blue;
+	cursor: pointer;
+	text-decoration: underline;
+}
+p.subtitle	{
+	font-style: italic;
+	color: #2b2b2b;
+	margin-bottom: 0.5rem;
+	font-size: 0.75rem;
+}
+/*Class Styling*/
+.container {
+	align-items: center;
 }
 .box {
 	border-style: solid;
@@ -23,4 +50,7 @@ a:visited {
 }
 .pinkBox	{
 	border-color: #ff5eae;
+}
+.orangeBox	{
+	border-color: #ffc72b;
 }
