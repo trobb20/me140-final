@@ -18,6 +18,10 @@ h2	{
 	font-size: 1.2rem;
 	margin-bottom: 0px;
 }
+.clickableImg:hover {
+	cursor: pointer;
+	border: dotted;
+}
 .clickableLink:hover {
 	color: blue;
 	cursor: pointer;
@@ -50,7 +54,11 @@ p.subtitle	{
 }
 .pinkBox	{
 	border-color: #ff5eae;
+	padding-top: 150px;
+	padding-bottom: 150px;
 }
 .orangeBox	{
 	border-color: #ffc72b;
+	padding-top: 150px;
+	padding-bottom: 150px;
 }
