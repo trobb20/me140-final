@@ -16,7 +16,7 @@
 <!-- Title/Description -->
   <div class='row'>
     <div class='col-md'>
-      <div class='box blueBox' onclick='openMoreInfo()'>
+      <div class='box blueBox'>
         <h1> Mechanical Modeling Project Placemat </h1>
         <p class='subtitle'> Taylor K. & Teddy R. 2021</p>
         <p> 
@@ -185,10 +185,11 @@
 <!-- JS -->
 <script>
   function downloadContent(url){
+    //Function to open a new page with a download link
     window.open(url, '_blank');
   }
   function openHint(id){
-
+    // Function to open a hint and animate
     var id_open = id.concat('_OPEN');
 
     document.getElementById(id_open).style.display='none';
@@ -202,8 +203,8 @@
     });
   }
   function closeHint(id){
-
-    var id_open = id.concat('_OPEN')
+    // Function to close a hint and animate
+    var id_open = id.concat('_OPEN');
 
     document.getElementById(id_open).style.display='block';
     document.getElementById(id).style.backgroundColor='#e8e8e8';
@@ -216,6 +217,7 @@
     });
   }
   function resizeYellowBox(){
+    // Function to make the yellow boxes the same height
     var yellowBox1Height = $('#yellowBox1').height().toString()+'px';
     document.getElementById('yellowBox2').style.height=yellowBox1Height;
   }
