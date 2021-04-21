@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <!-- JQuery -->
@@ -9,268 +10,30 @@
   <!-- Bootstrap & Stylesheet -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  <title>ME140 Teddy and Taylor</title>
+  <title>ME140 Teddy and Taylor Homepage</title>
 </head>
-<body><br>
+<body>
+  <br><br>
 <div class='container'>
-<!-- Title/Description -->
-  <div class='row'>
-    <div class='col-md'>
-      <div class='box blueBox'>
-        <h1> Mechanical Modeling Project Placemat </h1>
-        <p class='subtitle'> Taylor K. & Teddy R. 2021</p>
-        <p> 
-          Can you build a mechanical system that exhibits rotational, translational 
-          and general plane motion? Can you build one that uses a cam?
-        </p>
-        <div class='container'><div class='row'>
-          <div class='col'>
-            <div class='box blueBox'>
-              <h2 class='clickableLink' onclick='window.open("moreInfoProject.html")'>More info on the project</h2>
-            </div>
-          </div>
-          <div class='col'>
-            <div class='box blueBox'>
-              <h2 class='clickableLink' onclick="window.open('moreInfoCam.html')">More info on cams</h2>
-            </div>
-          </div>
-        </div></div>
-      </div>
-    </div>
-  </div><br>
-<!-- Circular Cam -->
-  <div class='row'>
-    <div class='col-md'>
-      <div class='box purpleBox'>
-        <div class='container'><div class='row align-items-center'>
-          <div class='col-2'></div>
-          <div class='col-4'>
-            <h2><strong> Getting Started </strong></h2>
-            <h2> Download a circlular cam template in Solidworks: </h2>
-          </div>
-          <div class='col-4'>
-            <img class='img-fluid float-right clickableImg' src='img/circle_cam.jpg' alt='generic cam' onclick='downloadContent("https://drive.google.com/file/d/1Kc9ER9VxegRUwrtjFOMlL39_5Cnn4NqC/view?usp=sharing")'>
-          </div>
-          <div class='col-2'></div>
-        </div></div>
-      </div>
-    </div>
-  </div><br>
-<!-- Yellow Hints -->
-  <div class='row align-items-center'>
-    <div class='col-md' id='yellowBox1'>
-      <div class='box yellowBox'>
-        <div class='container'><div class='row align-items-center'>
-          <div class='col-md-2'><h3 class='font-weight-light'> Hint: </h3></div>
-          <div class='col-md-10'>
-            <h2 style='margin-bottom:0.5rem; text-decoration: underline;'> Think like a builder: </h2>
-              <ul  style='margin-bottom:0px;'><li class='text-left'>How would you secure the cam with LEGO?</li>
-              <li class='text-left'>Can you find some LEGO pieces that would be able to "ride" on the cam?</li>
-              <li class='text-left'>How would you keep those LEGO pieces in contact with the cam?</li>
-              </ul>
-            </p>
-          </div>
-        </div></div>
-      </div>
-    </div>
-    <div class='col-md' id='yellowBox2'>
-      <div class='box yellowBox h-100'>
-        <div class='container h-100'><div class='row align-items-center h-100'>
-          <div class='col-2'><h3 class='font-weight-light'> Hint: </h3></div>
-          <div class='col-10'>
-            <h2 style='margin-bottom:0.5rem; text-decoration: underline;'> Think like a mathematictian: </h2>
-              <ul  style='margin-bottom:0px;'><li class='text-left'>How does a cam-rider move relative to a cam?</li>
-              <li class='text-left'>What does this mean mathematically?</li>
-              <li class='text-left'>How does an angular velocity relate to a tangential velocity?</li>
-              </ul>
-            </p>
-          </div>
-        </div></div>
-      </div>
-    </div>
-  </div><br>
-<!-- Pink Examples -->
-  <div class='row align-items-center'>
-    <div class='col-md'>
-      <div class='box pinkBox' id='HINT1' style='background-color: #e8e8e8;'>
-        <div id='HINT1_OPEN'>
-          <h2> 
-            Need a hint on how to make a better cam? 
-          </h2>
-          <a style='color: black;' data-toggle="collapse" href="#hint1" role="button" aria-expanded="false" aria-controls="hint1" onclick='openHint("HINT1","-140px")'>
-            <p class='clickableLink' style='margin-bottom:.5rem;'> Try out this Solidworks Example </p>
-          </a>
-        </div>
-        <div class="collapse" id="hint1">
-          <h2> Editable Generic Cam </h2>
-          <p> This is a classic generic cam shape. You can modify the following features: </p>
-          <p class='text-left'>
-              <ul  style='margin-bottom:0px;'><li class='text-left'>Overall Size</li>
-              <li class='text-left'>Cam Radii</li>
-              <li class='text-left'>Hole Configuration</li>
-              </ul>
-          </p> 
-          <img src="img/generic_cam.jpg" class="img-fluid clickableImg" alt="cam image" onclick='downloadContent("https://drive.google.com/file/d/1w6gANGx8GqLOBDGYzeaIoBE8wWhAfGU_/view?usp=sharing")'>
-          <a id='HINT1_CLOSE' style='color: black;' data-toggle="collapse" href="#hint1" role="button" aria-expanded="false" aria-controls="hint1" onclick='closeHint("HINT1","150px")'>
-            <h2 style='margin-top: 10px;' class='clickableLink'> Close hint </h2> 
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class='col-md'>
-      <div class='box pinkBox' id='HINT2' style='background-color: #e8e8e8;'>
-        <div id='HINT2_OPEN'>
-          <h2> 
-            Need a hint on how to understand cam math?
-          </h2>
-          <a style='color: black;' data-toggle="collapse" href="#hint2" role="button" aria-expanded="false" aria-controls="hint2" onclick='openHint("HINT2","-140px")'>
-            <p class='clickableLink' style='margin-bottom:.5rem;'> Try out this textbook problem </p>
-          </a>
-        </div>
-        <div class="collapse" id="hint2">
-          <h2> Textbook Problem 16-44 </h2>
-          <p> Try to work through this textbook problem. Keep these principles in mind: </p>
-          <p class='text-left'>
-              <ul  style='margin-bottom:0px;'><li class='text-left'>Relate the x-coordinate of point C to the rotation of the cam</li>
-              <li class='text-left'>Don't forget the chain rule!</li>
-              <li class='text-left' style='font-style: italic;'>Click the image if you get stuck</li>
-              </ul>
-          </p>
-          <img src="img/math_problem.jpg" class="img-fluid clickableImg" alt="cam image" onclick='window.open("mathProblem.html")'>
-          <a id='HINT2_CLOSE' style='color: black;' data-toggle="collapse" href="#hint2" role="button" aria-expanded="false" aria-controls="hint2" onclick='closeHint("HINT2","150px")'>
-          <h2 style='margin-top: 10px;' class='clickableLink'> Close hint </h2>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div><br>
-<!-- Orange Advanced Examples -->
-  <div class='row'>
-    <div class='col-md'>
-      <div class='box orangeBox' id='HINT3' style='background-color: #e8e8e8;'>
-        <div id='HINT3_OPEN'>
-          <h2> 
-            Want an example of a more advanced cam design?
-          </h2>
-          <a style='color: black;' data-toggle="collapse" href="#hint3" role="button" aria-expanded="false" aria-controls="hint3" onclick='openHint("HINT3","-140px")'>
-            <p class='clickableLink' style='margin-bottom:.5rem;'> Try out this Solidworks Example </p>
-          </a>
-        </div>
-        <div class="collapse" id="hint3">
-          <h2> Editable Lobed Cam </h2>
-          <p> This is a unique lobed cam shape. You can modify the following features: </p>
-          <p class='text-left'>
-              <ul  style='margin-bottom:0px;'><li class='text-left'>Number of lobes</li>
-              <li class='text-left'>Lobe radii</li>
-              <li class='text-left'>Hole Configuration</li>
-              </ul>
-          </p>
-          <img src="img/lobed_cam.jpg" class="img-fluid clickableImg" alt="cam image" onclick='downloadContent("https://drive.google.com/file/d/1PNG6M-OG02LbzoZ8fPLFKXw9VluCOzfT/view?usp=sharing")'>
-          <a id='HINT3_CLOSE' style='color: black;' data-toggle="collapse" href="#hint3" role="button" aria-expanded="false" aria-controls="hint3" onclick='closeHint("HINT3","150px")'>
-          <h2 style='margin-top: 10px;' class='clickableLink'> Close hint </h2>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class='col-md'>
-      <div class='box orangeBox' id='HINT4' style='background-color: #e8e8e8;'>
-        <div id='HINT4_OPEN'>
-          <h2> 
-            Want an example of a more advanced cam design?
-          </h2>
-          <a style='color: black;' data-toggle="collapse" href="#hint4" role="button" aria-expanded="false" aria-controls="hint4" onclick='openHint("HINT4","-140px")'>
-            <p class='clickableLink' style='margin-bottom:.5rem;'> Try out this Solidworks Example </p>
-          </a>
-        </div>
-        <div class="collapse" id="hint4">
-          <h2> Editable Lobed Cam </h2>
-          <p> This is a unique lobed cam shape. You can modify the following features: </p>
-          <p class='text-left'>
-              <ul  style='margin-bottom:0px;'><li class='text-left'>Number of lobes</li>
-              <li class='text-left'>Lobe radii</li>
-              <li class='text-left'>Hole Configuration</li>
-              </ul>
-          </p>
-          <img src="img/lobed_cam_teddy.jpg" class="img-fluid clickableImg" alt="cam image" onclick='downloadContent("https://drive.google.com/file/d/16Hr_yid9oiDlpA1KzvtSyuzOYw4aKLfj/view?usp=sharing")'>
-          <a id='HINT4_CLOSE' style='color: black;' data-toggle="collapse" href="#hint4" role="button" aria-expanded="false" aria-controls="hint4" onclick='closeHint("HINT4","150px")'>
-          <h2 style='margin-top: 10px;' class='clickableLink'> Close hint </h2>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div><br>
-<!-- Export to DXF -->
-  <div class='row'>
-    <div class='col'>
-      <div class='box blueBox' id='HINT5' style='background-color: #e8e8e8; padding-top: 50px; padding-bottom: 50px;'>
-        <div id='HINT5_OPEN'>
-          <h2> 
-            Need a hint on how laser cut your cam?
-          </h2>
-          <a style='color: black;' data-toggle="collapse" href="#hint5" role="button" aria-expanded="false" aria-controls="hint5" onclick='openHint("HINT5","-40px")'>
-            <p class='clickableLink' style='margin-bottom:.5rem;'> Click here for a tutorial </p>
-          </a>
-        </div>
-        <div class="collapse" id="hint5">
-          <h2> Laser Cutting Cam </h2>
-          <p> To laser cut your cam, follow these steps: </p>
-          <p class='text-left'>
-              <ul  style='margin-bottom:0px;'><li class='text-left'>Right click on the face of the cam</li>
-              <li class='text-left'>Select 'Export to DXF / DWG'</li>
-              <li class='text-left'>Save the DXF on your computer</li>
-              <li class='text-left'>Go laser cut your cam at the <a style='text-decoration: underline; color: blue;' target="_blank" href='http://nolop.org/laser-cutting/'> Nolop Makerspace </a></li>
-              </ul>
-          </p> 
-          <a id='HINT5_CLOSE' style='color: black;' data-toggle="collapse" href="#hint5" role="button" aria-expanded="false" aria-controls="hint5" onclick='closeHint("HINT5","50px")'>
-            <h2 style='margin-top: 10px;' class='clickableLink'> Close hint </h2> 
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div><br><br>
-<!-- JS -->
-<script>
-  function downloadContent(url){
-    //Function to open a new page with a download link
-    window.open(url, '_blank');
-  }
-  function openHint(id,px_open){
-    // Function to open a hint and animate
-    var id_open = id.concat('_OPEN');
-
-    document.getElementById(id_open).style.display='none';
-    document.getElementById(id).style.backgroundColor='white';
-
-    var id_str = "#".concat(id);
-
-    $(document).ready(function(){
-      $(id_str).animate({paddingTop: px_open});
-      $(id_str).animate({paddingBottom: px_open});
-    });
-  }
-  function closeHint(id,px_close){
-    // Function to close a hint and animate
-    var id_open = id.concat('_OPEN');
-
-    document.getElementById(id_open).style.display='block';
-    document.getElementById(id).style.backgroundColor='#e8e8e8';
-
-    var id_str = "#".concat(id);
-
-    $(document).ready(function(){
-      $(id_str).animate({paddingTop: px_close});
-      $(id_str).animate({paddingBottom:px_close});
-    });
-  }
-  function resizeYellowBox(){
-    // Function to make the yellow boxes the same height
-    var yellowBox1Height = $('#yellowBox1').height().toString()+'px';
-    document.getElementById('yellowBox2').style.height=yellowBox1Height;
-  }
-  window.onload = resizeYellowBox;
-  window.addEventListener('resize', resizeYellowBox);
-</script>
+  <div class='row align-items-center'><div class='col'>
+    <h1 class="display-3 text-center">ME140 Final Project</h1>
+  </div></div>
+  <div class='row align-items-center'><div class='col'>
+    <p class='text-center'><em> Teddy Robbins and Taylor Korte </em></p>
+  </div></div><hr style='height: 4px; border-width: 4px; border-color: #7d7d7d;'>
+  <div class='row'><div class='col-2'></div><div class='col-8'>
+    <p class='text-left'>
+      This is Teddy and Taylor’s ME 140 final project Design a dynamic system with rotational and translational movement by making a cam design in SolidWorks, laser cutting the design, and using legos to create a system.
+      <br><br>
+      The purpose of this website is to encourage iteration and creative designing by supplying helpful templates, examples, and resources for cam systems.
+    </p>
+  </div><div class='col-2'></div></div>
+  <div class='row'><div class='col-2'></div><div class='col-8'><div class='box blueBox'>
+    <h3 class='clickableLink text-center' onclick='window.open("placemat.html")'> 
+          View the placemat 
+    </h3>
+  </div><div class='col-2'></div></div></div>
+</div>
 <!-- Bootstrap stuff -->
 <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
