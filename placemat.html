@@ -272,13 +272,13 @@
       $(id_str).animate({paddingBottom:px_close});
     });
   }
-  function resizeYellowBox(){
+  function resizeBox(color){
     // Function to make the yellow boxes the same height
-    var yellowBox1Height = $('#yellowBox1').height().toString()+'px';
-    document.getElementById('yellowBox2').style.height=yellowBox1Height;
+    var box1Height = $('#'.concat(color,'Box1')).height().toString()+'px';
+    document.getElementById(color.concat('Box2')).style.height=box1Height;
   }
-  window.onload = resizeYellowBox;
-  window.addEventListener('resize', resizeYellowBox);
+  window.onload = resizeBox('yellow');
+  window.addEventListener('resize', resizeBox('yellow'));
 </script>
 <!-- Bootstrap stuff -->
 <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
